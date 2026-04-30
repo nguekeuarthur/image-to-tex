@@ -779,17 +779,13 @@ def ocr():
 
 
 if __name__ == '__main__':
-    import os
-    # Port : 7860 par défaut (convention Hugging Face Spaces)
-    # En local, vous pouvez forcer 5000 via : PORT=5000 python app.py
-    port = int(os.environ.get('PORT', 7860))
     print("=" * 60)
     print("  📖 Lecteur OCR Pro — Multi-images (tout-en-un)")
     print("=" * 60)
     print(f"  EasyOCR    : {'✓ disponible' if EASYOCR_AVAILABLE else '✗ non installé'}")
     print(f"  PaddleOCR  : {'✓ disponible' if PADDLEOCR_AVAILABLE else '✗ non installé (optionnel)'}")
     print("=" * 60)
-    print(f"  Ouvrir : http://localhost:{port}")
+    print("  Ouvrir : http://localhost:5000")
     print("  Pour arrêter : Ctrl+C")
     print("=" * 60)
-    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+    app.run(host='127.0.0.1', port=5000, debug=False, use_reloader=False)
