@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Cache des modèles OCR (ne pas push, ils se téléchargent à la première utilisation)
+.EasyOCR/
+.paddleocr/
+*.pth
+*.pdmodel
+*.pdiparams
+
+# Logs
+*.log
+
+# Variables d'environnement
+.env
+.env.local
+
+# Fichiers temporaires
+tmp/
+temp/
+*.tmp
+
+# Tests utilisateurs
+test_images/
+uploads/

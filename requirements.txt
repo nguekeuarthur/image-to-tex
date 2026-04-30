@@ -1,0 +1,10 @@
+flask>=3.0.0
+gunicorn>=21.2.0
+pillow>=10.0.0
+numpy>=1.24.0,<2.0.0
+easyocr>=1.7.0
+
+# PyTorch CPU-only (plus léger pour le déploiement)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+torchvision>=0.15.0
